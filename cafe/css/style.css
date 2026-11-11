@@ -1,0 +1,44 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: darkgrey;
+}
+
+#titre {
+    text-align: center;
+    color: darkblue;
+}
+
+h1,h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+nav a {
+  color: blue;
+}
+
+nav a:hover {
+  color: red;
+}
+
+.nouveau {
+    color: green;
+}
+
+.nouveau::before {
+    content: "Nouveau : ";
+}
+
+.promo {
+    background-color: lightyellow;
+}
+
+.carte li:nth-child(odd) {
+    background-color: lightblue;
+}
+.carte li:first-child {
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+}

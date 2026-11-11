@@ -1,0 +1,124 @@
+/* Réglage général */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background-color: #F4F7FB;
+    color: #263238;
+}
+
+/* En-tête collé en haut pendant le défilement */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 15px 5%;
+    background-color: #1F3864;
+    color: white;
+}
+
+header img {
+    border: 3px solid white;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Contenu principal */
+main {
+    width: 90%;
+    max-width: 700px;
+    margin: 25px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 12px;
+}
+
+/* Bulles de conversation */
+.message {
+    width: fit-content;
+    max-width: 70%;
+    padding: 12px 16px;
+    margin-bottom: 12px;
+    border-radius: 16px;
+    overflow-wrap: break-word;
+}
+
+.bot {
+    background-color: #DCEEFF;
+}
+
+.bot::before {
+    content: "Nova : ";
+    font-weight: 700;
+}
+
+.user {
+    margin-left: auto;
+    background-color: #2878D0;
+    color: white;
+}
+
+/* Champ de saisie et boutons */
+input[type="text"],
+textarea {
+    max-width: 100%;
+    padding: 10px;
+    border: 1px solid #B8C7D9;
+    border-radius: 8px;
+    font: inherit;
+}
+
+#message:focus {
+    background-color: #DCEEFF;
+    outline: 2px solid #2878D0;
+}
+
+button {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 8px;
+    background-color: #2878D0;
+    color: white;
+    font: inherit;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1F3864;
+}
+
+/* Tableau des questions fréquentes */
+table {
+    width: 100%;
+    margin-top: 15px;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 10px;
+    border: 1px solid #B8C7D9;
+    text-align: left;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #DCEEFF;
+}
+
+fieldset {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #B8C7D9;
+    border-radius: 8px;
+}
+
+footer {
+    margin-top: 25px;
+    text-align: center;
+}

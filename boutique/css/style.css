@@ -1,0 +1,53 @@
+.menu {
+  background-color: #1F3864;
+  padding: 1rem;
+}
+
+.menu a {
+  color: #ffffff;
+  text-decoration: none;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+}
+
+
+.cache {
+  display: none;
+}
+
+
+.produit {
+  max-width: 400px;
+  margin: 0 auto 1.5rem;
+  border: 1px solid #cccccc;
+  padding: 1rem;
+  position: relative;
+}
+
+
+.badge {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  background-color: red;
+  color: #ffffff;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+}
+
+
+.haut {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  background-color: #1F3864;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 0.7rem 1rem;
+  border-radius: 8px;
+}

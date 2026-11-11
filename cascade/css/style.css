@@ -1,0 +1,19 @@
+/* Couleur prévue : rouge.
+   Raison : #info (id) est plus spécifique que .note (classe) et que p (élément),
+   donc la règle #info l'emporte. */
+
+
+p { color: black; }
+.note {color: #1F3864;}
+p { color: green; }
+/* Question 2 : après suppression de #info, couleur prévue = bleu.
+   Raison : .note (classe) est plus spécifique que p (élément). */
+
+   /* Question 3 : après suppression de .note, couleur prévue = vert.
+   Raison : les deux règles p ont la même spécificité,
+   donc la dernière écrite (green) l'emporte. */
+.cadre {
+  color: #2E75B6;
+  font-family: Georgia, serif;
+  border: 2px solid #1F3864;
+}
